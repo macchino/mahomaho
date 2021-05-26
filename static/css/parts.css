@@ -118,7 +118,7 @@
 .modaal-close:focus:before,
 .modaal-close:hover:after,
 .modaal-close:hover:before{
-	background:#666;
+	background:rgb(8, 8, 8);
 }
 
 /*キャプション*/
