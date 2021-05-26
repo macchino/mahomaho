@@ -179,7 +179,7 @@
 }
 
 #box1{
-    background:url("/static/img/bg_02.jpg") no-repeat center;
+    background:url("../img/bg_02.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -194,21 +194,21 @@
 }
 
 #box2{
-    background:url("/static/img/bg_03.jpg") no-repeat center;
+    background:url("../img/bg_03.jpg") no-repeat center;
     background-size: cover;
 }
 #box3 {
-	background: url("/static/img/bg_06.jpg") no-repeat center;
+	background: url("../img/bg_06.jpg") no-repeat center;
 	background-size: cover;
 }
 
 #box4{
-    background:url("/static/img/bg_05.jpg") no-repeat center;
+    background:url("../img/bg_05.jpg") no-repeat center;
     background-size: cover;
 }
 
 #box5{
-    background:url("/static/img/bg_05.jpg") no-repeat center;
+    background:url("../img/bg_05.jpg") no-repeat center;
     background-size: cover;
 }
 
