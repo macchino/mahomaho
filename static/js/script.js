@@ -10,7 +10,7 @@ var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0
 			var responsiveImage = [
 				{ src: 'static/img/bg_sp01.jpg' },
 				{ src: 'static/img/bg_sp02.jpg' },
-				{ src: 'static/img/bg_sp04.jpg' }
+				{ src: 'static/img/bg_sp03.jpg' }
 			];
 		}
 
