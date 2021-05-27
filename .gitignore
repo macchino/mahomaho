@@ -3,7 +3,7 @@
 user-doc.rst
 docker-compose.yml
 Dockerfile
-staticfiles
+# staticfiles
 ### Django ###
 *.log
 *.pot

@@ -1,18 +1,12 @@
-from pathlib import Path
 import django_heroku
+from pathlib import Path
 import dj_database_url
 import environ
 import os
 
-env = environ.Env(
-     DEBUG=(bool, False)
-)
+env = environ.Env()
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale'),
-)
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Whether it is a heroku environment or not
 IS_ON_HEROKU = env.bool('ON_HEROKU', default=False)
@@ -161,12 +155,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ------------------------------------ #
 # Settings for sending email #
